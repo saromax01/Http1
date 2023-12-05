@@ -1,0 +1,6 @@
+<div *ngFor="let product of products">
+  <h3>{{ product.name }}</h3>
+  <!-- Altri dettagli del prodotto -->
+  <button (click)="addToFavorites(product)">Aggiungi ai preferiti</button>
+  <button (click)="addToCart(product)">Aggiungi al carrello</button>
+</div>
